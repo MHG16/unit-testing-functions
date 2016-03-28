@@ -5,6 +5,10 @@
  * false if it is not three.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: inputString - a string, example valid value: 'sos', returns: true.   
+ *
+ * Return value of the function: type - Boolean.  
  */
 function checkData(inputString) {
 	// your code goes here
