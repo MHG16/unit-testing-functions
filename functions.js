@@ -9,10 +9,23 @@
  * Inputs: inputString - a string, example valid value: 'sos', returns: true.   
  *
  * Return value of the function: type - Boolean.  
+ *
+ * How to implement function:  Use string.length to determine the length of the string.  Use an if statement 
+ * to check if equals 3 or not and return true or false.   
+ *
  */
+
+
 function checkData(inputString) {
-	// your code goes here
-}
+	if(typeof(inputString) !== 'string') {
+		throw new Error('checkData can only take strings');
+	} else if 
+		(inputString.length === 3) 
+		return true;
+	
+	return false;
+};
+
 
 /*
  * PROBLEM `concatenateArrays`: (normal)
