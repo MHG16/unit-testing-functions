@@ -6,7 +6,7 @@
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  *
- * Inputs: inputString - a string, example valid value: 'sos', returns: true.   
+ * Inputs: inputString - a string. Example valid value: 'sos', returns: true.   
  *
  * Return value of the function: type - Boolean.  
  *
@@ -33,7 +33,13 @@ function checkData(inputString) {
  * that is formed by the elements of a followed by the elements of b.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: a,b two arrays of integers. Example valid values [1, 2, 3], [4, 5, 6] returns [1, 2, 3, 4, 5, 6]
+ *
+ * Return value of the function: type - array 
+ *
  */
+
 function concatenateArrays(a, b) {
 	// your code goes here
 }
