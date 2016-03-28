@@ -15,7 +15,7 @@ it('should return a noun that begins with a capital letter, followed by small le
 	expect(functions.fixProperNoun('wAteRmEloN')).to.equal('Watermelon');
 });
 
-it('should return a noun as it is if it already has first letter capitalized and the rest lower case', function() {
+it('should return a noun as it is if already has first letter capitalized and the rest lower case', function() {
 	expect(functions.fixProperNoun('Caterpillar')).to.equal('Caterpillar');
 })
 

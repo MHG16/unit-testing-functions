@@ -18,7 +18,7 @@
 
 function checkData(inputString) {
 	if(typeof(inputString) !== 'string') {
-		throw new Error('checkData can only take strings');
+		throw new Error('Invaid Input');
 	} else if 
 		(inputString.length === 3) 
 		return true;
@@ -45,7 +45,7 @@ function concatenateArrays(a, b) {
 	var newArray;
 
 	if((Array.isArray(a)  === false) || (Array.isArray(b) === false)) {
-		throw new Error('concatenateArrays can only take arrays');
+		throw new Error('Invalid Input');
 	}  
 	 newArray = a.concat(b);
 	 return newArray;  
@@ -61,13 +61,27 @@ function concatenateArrays(a, b) {
  * If the input is invalid throw an 'Invalid Input' exception.
  *
  * Inputs: noun, a string.  Example valid value: 'aPpLe' returns 'Apple'
-
-
+ *
+ * Return value of the function: type - string
+ *
+ * How to implement function: 1. Convert first letter to uppercase: string.charAt(0).toUpperCase
+ * 2. convert rest of string to lower case:  string.substring(1, string.length)  string.toLowerCase
+ * 3. concatenate the first letter with the rest of the string: concat(stringStart, stringRest)
  */
 function fixProperNoun(noun) {
-	// your code goes here
-}
+	if(typeof(noun) !== 'string') {
+		throw new Error('Invalid Input');
+	}
 
+	var firstLetter = '';
+	var restOfString = '';
+
+	firstLetter = noun.charAt(0).toUpperCase();
+	restOfString = noun.substring(1, noun.length).toLowerCase();  
+
+	return firstLetter + restOfString;
+
+};
 /*
  * PROBLEM `sortLetters`: (normal)
  * Write a function called `sortLetters` that returns a string that sorts all

@@ -11,7 +11,7 @@ describe('concatenateArrays', function() {
 	});
 
 	it('should return an array that has the elements of array a followed by the elements of array b', function() {
-		expect(functions.concatenateArrays([1, 3], [7, 9])).to.equal([1, 3, 7, 9]);
+		expect(functions.concatenateArrays([1, 3], [7, 9])).to.deep.equal([1, 3, 7, 9]);
 	});
 
 
