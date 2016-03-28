@@ -34,15 +34,22 @@ function checkData(inputString) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  *
- * Inputs: a,b two arrays of integers. Example valid values [1, 2, 3], [4, 5, 6] returns [1, 2, 3, 4, 5, 6]
+ * Inputs: a,b two arrays of integers. Example valid values: [1, 2, 3], [4, 5, 6] returns [1, 2, 3, 4, 5, 6]
  *
  * Return value of the function: type - array 
  *
+ * How to implement function: Use array.concat() to concatenate the two arrays.   
  */
 
 function concatenateArrays(a, b) {
-	// your code goes here
-}
+	var newArray;
+
+	if((Array.isArray(a)  === false) || (Array.isArray(b) === false)) {
+		throw new Error('concatenateArrays can only take arrays');
+	}  
+	 newArray = a.concat(b);
+	 return newArray;  
+};
 
 /*
  * PROBLEM `fixProperNoun`: (normal)
@@ -52,6 +59,10 @@ function concatenateArrays(a, b) {
  * capitalization.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: noun, a string.  Example valid value: 'aPpLe' returns 'Apple'
+
+
  */
 function fixProperNoun(noun) {
 	// your code goes here
