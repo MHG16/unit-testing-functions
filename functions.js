@@ -36,7 +36,7 @@ function checkData(inputString) {
  *
  * Inputs: a,b two arrays of integers. Example valid values: [1, 2, 3], [4, 5, 6] returns [1, 2, 3, 4, 5, 6]
  *
- * Return value of the function: type - array 
+ * Return value of the function: type - array  
  *
  * How to implement function: Use array.concat() to concatenate the two arrays.   
  */
@@ -62,7 +62,7 @@ function concatenateArrays(a, b) {
  *
  * Inputs: noun, a string.  Example valid value: 'aPpLe' returns 'Apple'
  *
- * Return value of the function: type - string
+ * Return value of the function: type - string with first letter capitalized, rest lower case
  *
  * How to implement function: 1. Convert first letter to uppercase: string.charAt(0).toUpperCase
  * 2. convert rest of string to lower case:  string.substring(1, string.length)  string.toLowerCase
@@ -88,6 +88,10 @@ function fixProperNoun(noun) {
  * the letters from a given string in the alphabetical order.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: inputString a string.  Example valid value 'coconut' returns 'ccnootu'
+ *
+ * Return value of the function: type - string with letters in alphabetical order 
  */
 function sortLetters(inputString) {
 	// your code goes here
