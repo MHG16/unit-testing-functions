@@ -89,13 +89,19 @@ function fixProperNoun(noun) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  *
- * Inputs: inputString a string.  Example valid value 'coconut' returns 'ccnootu'
+ * Inputs: inputString- a string.  Example valid value 'coconut' returns 'ccnootu'
  *
  * Return value of the function: type - string with letters in alphabetical order 
  */
 function sortLetters(inputString) {
-	// your code goes here
+	if(typeof(noun) !== 'string') {
+		throw new Error('Invalid Input');
 }
+
+
+
+
+
 
 /*
  * PROBLEM `absVal`: (normal)
