@@ -92,15 +92,29 @@ function fixProperNoun(noun) {
  * Inputs: inputString- a string.  Example valid value 'coconut' returns 'ccnootu'
  *
  * Return value of the function: type - string with letters in alphabetical order 
+ *
+ * How to implement the function: 1. use string.split() to make string into an array of strings
+ * 2. Use array.sort() function to sort the array
+ * 3. use array.join() to turn array back into a string
+ * 4. return the string.  
+ *
+ *
+ *
+ * 5. Return the new string with letters in alphabetical order  
+ *
  */
 function sortLetters(inputString) {
-	if(typeof(noun) !== 'string') {
+	if(typeof(inputString) !== 'string') {
 		throw new Error('Invalid Input');
+	}
+     var stringArray = [];
+	 stringArray = inputString.split('');
+
+     stringArray = stringArray.sort();
+
+
+     return stringArray.join(''); 
 }
-
-
-
-
 
 
 /*
@@ -109,6 +123,10 @@ function sortLetters(inputString) {
  * integer. Don't use Math.abs(...)
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: an integer. Example valid value: -7 returns 7.  
+ *
+ * Return value of the function: type - integer, the absolute value of the input.   
  */
 function absVal(integer) {
 	// your code goes here

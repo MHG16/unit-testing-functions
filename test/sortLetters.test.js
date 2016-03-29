@@ -12,7 +12,7 @@ it('should throw an error if a string is not entered', function() {
 });
 
 it('should return a string that contains the letters in alphabetical order', function() {
-	expect(functions.fixProperNoun('computer')).to.equal('cemoprtu');
+	expect(functions.sortLetters('hello')).to.equal('ehllo');
 });
 
 
