@@ -127,10 +127,31 @@ function sortLetters(inputString) {
  * Inputs: an integer. Example valid value: -7 returns 7.  
  *
  * Return value of the function: type - integer, the absolute value of the input.   
+ *
+ * How to implement the function: 1. check that the number is an integer by checking if the number
+ * divided by 1 is zero. 
+ * 2. if the number is postive, return that number 
+ * 3. if the number is negative, return the positive of that number.  
  */
 function absVal(integer) {
-	// your code goes here
+	if(typeof(integer) !== 'number') {
+		throw new Error('Invalid Input');
+	}
+
+	else if 
+		((integer % 1) !== 0) {
+			throw new Error('Invalid Input');
+		}	
+	else if 
+		(integer >= 0) {
+			return integer; 
+		}
+	
+	return integer * -1;  
+
 }
+
+
 
 /*
  * PROBLEM `myMin`: (normal)
@@ -138,7 +159,14 @@ function absVal(integer) {
  * smaller of the two numbers.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: two integers.  Ex valid input: 4, 17.  Returns 4.  
+ *
+ * Return value of the function: an integer, the smaller of the two inputs.  
  */
+
+
+
 
 /*
  * PROBLEM `myMax`: (normal) - Actual Interview Question

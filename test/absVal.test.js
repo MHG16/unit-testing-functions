@@ -8,7 +8,7 @@ it('should Exist', function() {
 });
 
 it('should throw an error if an integer is not entered', function() {
-	expect(function() {functions.absVal('hello')}).to.throw();
+	expect(function() {functions.absVal('hello', 1.3)}).to.throw();
 });
 
 it('should return an integer that is the absolute value', function() {
@@ -16,7 +16,7 @@ it('should return an integer that is the absolute value', function() {
 });
 
 it('should return an integer that is the absolute value', function() {
-	expect(functions.absVal(0)).to.equal(0);
+	expect(functions.absVal(12)).to.equal(12);
 });
 
 });
