@@ -129,7 +129,7 @@ function sortLetters(inputString) {
  * Return value of the function: type - integer, the absolute value of the input.   
  *
  * How to implement the function: 1. check that the number is an integer by checking if the number
- * divided by 1 is zero. 
+ * divided by 1 has remainder zero. 
  * 2. if the number is postive, return that number 
  * 3. if the number is negative, return the positive of that number.  
  */
@@ -163,7 +163,28 @@ function absVal(integer) {
  * Inputs: two integers.  Ex valid input: 4, 17.  Returns 4.  
  *
  * Return value of the function: an integer, the smaller of the two inputs.  
+ *
+ * How to implement the function: 1. check that both of the numbers are integers by dividing each 
+ * by one giving a remainder of zero.
+ * 2. Compare each number using < and returning the smaller of the two.
+ *
  */
+ function myMin (a, b) {
+ 	if((typeof(a) !== 'number') || (typeof(b) !== 'number')) {
+		throw new Error('Invalid Input');
+	}
+
+	else if 
+		((a % 1 !== 0) || (b % 1 !== 0)) {
+			throw new Error('Invalid Input');
+		}
+ 	
+	else if 
+		(a >= b) {
+			return b;
+		}
+	  	return a;
+}
 
 
 
