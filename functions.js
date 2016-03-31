@@ -281,8 +281,43 @@ function absVal(integer) {
  * Inputs: an array of student names which are strings.  Example valid input: ['Nate', 'Dan', 'Katy', 'Dana'].
  * Return value of the function: an array of arrays of string pairs [['Dana', 'Nate'], ['Dan', 'Katy']]
  *
+ * How to implement function: 1. loop through the student array and pull out 2 random names at a time
+ * 2. Push those two names into an array.  
+ * 3 Continue pulling out 2 random names until none left in input array and push those two into array. 
+ * 4.  Concatenate all of 2 student arrays into longer array.  
  */
 
+ function studentPairs(array) {
+ 	if(Array.isArray(array) !== 'true') {
+		throw new Error('Invalid Input');
+	}
+	//check that each value in the array is a string
+	for (var i = 0; i < array.length; i++) 
+		if (typeof(array[i]) !== 'string') {
+			throw new Error('Invalid Input')
+		}
+	
+	var arrayOfTwoStudentArrays = [];
+	var name1 = '';
+	var name2 = '';
+	var randomNumber
+
+	while (array.length) {
+	
+		randomNumber = array[Math.floor(Math.random() * array.length)
+		name1 = array[randomNumber];
+		array.splice(randomNumber, 1);
+		randomNumber = array[Math.floor(Math.random() * array.length)
+		name2 = array[randomNumber];
+		array.splice(randomNumber, 1);
+		var twoStudentArray = [name1, name2];
+		arrayOfTwoStudentArrays.push(twoStudentArray);
+	}
+
+
+
+
+ }
 
 
 /*
