@@ -197,7 +197,18 @@ function absVal(integer) {
  * If the input is invalid throw an 'Invalid Input' exception.
  *
  * Insane mode: do this without using a for loop.
+ *
+ * Inputs: an array of integers.  Ex valid input [5, 17, 3, 25, 47, 15].  Returns 47.  
+ *
+ * Return value of the function: the largest integer in the array.  
  */
+
+
+
+
+
+
+
 
 /*
  * PROBLEM `getMonth`: (normal)
