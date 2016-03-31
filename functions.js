@@ -269,12 +269,21 @@ function absVal(integer) {
  * returns one randomly selected value from that array.
  */
 
+
+
+
 /*
  * PROBLEM `studentPairs`: (normal)
  * Create a javascript function called `studentPairs` that takes an array of
  * student names and returns an array of randomly selected pairs of students
  * (array of arrays).
+ *
+ * Inputs: an array of student names which are strings.  Example valid input: ['Nate', 'Dan', 'Katy', 'Dana'].
+ * Return value of the function: an array of arrays of string pairs [['Dana', 'Nate'], ['Dan', 'Katy']]
+ *
  */
+
+
 
 /*
  * PROBLEM `sumSquares`: (normal)
