@@ -201,14 +201,30 @@ function absVal(integer) {
  * Inputs: an array of integers.  Ex valid input [5, 17, 3, 25, 47, 15].  Returns 47.  
  *
  * Return value of the function: the largest integer in the array.  
+ *	
+ * How to implement the function: 1. Create a variable to hold the largest integer and set it equal 
+ * the first item in the array.
+ * 2. Iterate over the array with a for loop and if the number at the index is larger than the 
+ * largest so far, set the largest so far to that number.  
+ * 3. Return the largest integer once the end of the array is reached.  
  */
 
+ function myMax(array) {
+	if(Array.isArray(array) !== 'true') {
+		throw new Error('Invalid Input');
+	}
 
-
-
-
-
-
+	//check value in each index is an integer
+	for (var i = 0; i < array.length; i++) 
+		if (typeof(array[i]) !== 'number') {
+			throw new Error('Invalid Input')
+		}
+	//sort the array and return 	
+	array.sort(function(a, b) {
+  		return a - b;
+	});
+	return array[array.length-1];
+}	
 
 /*
  * PROBLEM `getMonth`: (normal)
@@ -220,6 +236,13 @@ function absVal(integer) {
  * etc.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: an integer 1 - 12. Example valid input: 5.  Returns 'May'
+ * 
+ * Return value of the function: a string - 'January' through 'December'
+ *
+
+
  */
 
 /*

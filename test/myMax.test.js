@@ -8,7 +8,7 @@ it('should Exist', function() {
 });
 
 it('should throw an error if an array of integers is not entered', function() {
-	expect(function() {functions.myMax('a', 72, ['a', 'b'])}).to.throw();
+	expect(function() {functions.myMax('a', 72)}).to.throw();
 });
 
 it('should return the largest integer in the array', function() {
