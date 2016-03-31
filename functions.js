@@ -241,9 +241,27 @@ function absVal(integer) {
  * 
  * Return value of the function: a string - 'January' through 'December'
  *
-
-
+ * How to implement the function: 1. Create a variable 'month' to store the input integer 
+ * 2. Use an array: monthsOfYear = [January, February, March, April, May, June, July, August, September, October, November, December]
+ * 3. Return the value in the array at position - 1;  
+ *
  */
+
+ function getMonth(month) {
+ 	if(typeof(month) !== 'number') {
+		throw new Error('Invalid Input');
+	}
+
+	if((month < 1) || (month > 12)) {
+		throw new Error('Invalid Input');
+	}
+
+ 	var monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+ 	return monthsOfYear[month - 1];
+
+ }
+
+
 
 /*
  * PROBLEM `randomElement`: (normal)

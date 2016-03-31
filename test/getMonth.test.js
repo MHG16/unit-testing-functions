@@ -16,7 +16,7 @@ it('should throw an error if an integer between 1 and 12 is not entered', functi
 });
 
 it('should return the corresponding month', function() {
-	expect(functions.getMonth(7)).to.equal('July');
+	expect(functions.getMonth(1)).to.equal('January');
 });
 
 });
