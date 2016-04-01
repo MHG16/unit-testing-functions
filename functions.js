@@ -271,9 +271,20 @@ function absVal(integer) {
  * Inputs: an array of values.  Example valid input: ['blue', 'green', 'red', 'yellow'].  Returns green.
  * 
  * Return value of the function: one random element of the array, same type as in original array.   
+ *
+ * How to implement the function: 1. Create a variable to hold the random element.
+ * 2. Return a random element of the input array using Math.floor and Math.random on the length of the array
  */
 
+ function randomElement(array) {
+ 	if(Array.isArray(array) !== 'true') {
+		throw new Error('Invalid Input');
+	}
 
+ 	var randomThing
+ 
+ 	return randomThing = array[Math.floor(Math.random() * array.length)];
+ }
 
 
 /*
