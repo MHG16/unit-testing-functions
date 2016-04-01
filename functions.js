@@ -338,7 +338,20 @@ function absVal(integer) {
  * integers from 1 up to and including a given positive, non-zero integer N.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: an integer that is positve and not zero.  An example is 4.  The output would be: 30.
+ *
+ * Return value of the function: An interger that is the sum of all the positive integers squared
+ * up to that number.
+ *
  */
+
+
+
+
+
+
+
 
 /* 
  * PROBLEM `findMaxDiff`: (normal)
