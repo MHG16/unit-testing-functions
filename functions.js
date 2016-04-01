@@ -267,6 +267,10 @@ function absVal(integer) {
  * PROBLEM `randomElement`: (normal)
  * Create a function called `randomElement` that takes an array of values and
  * returns one randomly selected value from that array.
+ *
+ * Inputs: an array of values.  Example valid input: ['blue', 'green', 'red', 'yellow'].  Returns green.
+ * 
+ * Return value of the function: one random element of the array, same type as in original array.   
  */
 
 
