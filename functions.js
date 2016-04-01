@@ -210,7 +210,7 @@ function absVal(integer) {
  */
 
  function myMax(array) {
-	if(Array.isArray(array) !== 'true') {
+	if(Array.isArray(array) !== true) {
 		throw new Error('Invalid Input');
 	}
 
@@ -223,6 +223,7 @@ function absVal(integer) {
 	array.sort(function(a, b) {
   		return a - b;
 	});
+
 	return array[array.length-1];
 }	
 
