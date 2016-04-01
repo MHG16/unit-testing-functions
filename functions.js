@@ -385,7 +385,49 @@ function absVal(integer) {
  *
  * Return value of the function: an integer, the maximal difference between any two adjacent elements.
  *
+ * How to implement the function: 1. Create two variables, left and right to hold to first elements in array
+ * 2. create a variable currentDiff to hold the biggest difference between left and right.  
+ * 3. create a maxDiff variable to hold the largest of all the currentDiffs.  
+ * 4.  While index of right is less than length of array, loop through array.   
+ * 5.    If left-right > right - left, put left-right in currentDiff, otherwise put right - left in currentDiff
+ * 6.    If currentDiff > maxDiff, then set maxDiff = currentDiff.  
+ * return maxDiff
  */
+
+function findMaxDiff(array) {
+	if(Array.isArray(array) !== true) {
+		throw new Error('Invalid Input');
+	}
+    //check that each element is a number and integer.  
+	for (var i = 0; i < array.length; i++) {
+		if ((typeof(array[i]) !== 'number') && ((array[i] % 1) !== 0)) {
+			throw new Error('Invalid Input')
+		}
+	}
+
+	var left = 0;
+	var right = 0;
+	var currentDiff = 0;
+	var maxDiff = 0;
+
+	for (i = 0; i < array.length; i++) {
+		left = array[i];
+		right = array[i+1];
+		if(left - right > right - left) {
+			currentDiff = left - right;
+			if (currentDiff > maxDiff) {
+        		maxDiff = currentDiff; 
+      		}
+		}
+		currentDiff = right - left; 
+		if (currentDiff > maxDiff) {
+			maxDiff = currentDiff;
+		}
+
+	}
+	return maxDiff;  
+}
+
 
 
 
