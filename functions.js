@@ -380,7 +380,20 @@ function absVal(integer) {
  * the maximal difference between any two adjacent elements.
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: an array of integers.  Example valid input: [1, 7, 11, 3,] Would return 8.  
+ *
+ * Return value of the function: an integer, the maximal difference between any two adjacent elements.
+ *
  */
+
+
+
+
+
+
+
+
 
 /*
  * PROBLEM `insertDashes`: (normal)
