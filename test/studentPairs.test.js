@@ -11,11 +11,9 @@ it('should throw an error if an array is not entered', function() {
 	expect(function() {functions.studentPairs(25, 'hello')}).to.throw();
 });
 
-it('should return an array of arrays that contain random student pairs', function() {
- 	expect(functions.sortLetters(['Jen', 'Josh', 'Mory', 'Anna'])).to.equal([[   ], [   ]]);
- });
-
-
+it('should throw an error if an odd number of students is in the array', function() {
+	expect(function() {functions.studentPairs(['Joe', 'Martin', 'Maria'])}).to.throw();
+});
 
 
 

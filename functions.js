@@ -304,18 +304,15 @@ function absVal(integer) {
 
 	while (array.length) {
 	
-		randomNumber = array[Math.floor(Math.random() * array.length)
+		randomNumber = array[Math.floor(Math.random() * array.length)];
 		name1 = array[randomNumber];
 		array.splice(randomNumber, 1);
-		randomNumber = array[Math.floor(Math.random() * array.length)
+		randomNumber = array[Math.floor(Math.random() * array.length)];
 		name2 = array[randomNumber];
 		array.splice(randomNumber, 1);
 		var twoStudentArray = [name1, name2];
 		arrayOfTwoStudentArrays.push(twoStudentArray);
 	}
-
-
-
 
  }
 
