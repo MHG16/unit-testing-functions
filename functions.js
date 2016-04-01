@@ -345,15 +345,35 @@ function absVal(integer) {
  * Return value of the function: An interger that is the sum of all the positive integers squared
  * up to that number.
  *
+ * How to implement the function: 1. Create a variable called sumTotal and set to 0.
+ * 1.
+ * 2. Create a variable current and set to 1.  
+ * 3. While current < number, square it and add to sumTotal
+ * 4. Increase current by 1.  
+ * 5. Return the sumTotal when current = number
  */
 
+ function sumSquares(number) {
+ 	if(typeof(number) !== 'number') {
+		throw new Error('Invalid Input');
+	}
 
+	else if(number % 1 !== 0) {
+		throw new Error('Invalid Input');
+ 	}
 
+ 	else if(number <= 0 ) {
+		throw new Error('Invalid Input');
+ 	}
 
-
-
-
-
+ 	var current = 1; 
+ 	var sumTotal = 0;
+ 	while (current <= number) {
+ 		sumTotal += current * current; 
+ 		current++;
+ 	}
+ 	return sumTotal;   
+}
 /* 
  * PROBLEM `findMaxDiff`: (normal)
  * Given an array of integers, write a function called `findMaxDiff` that finds

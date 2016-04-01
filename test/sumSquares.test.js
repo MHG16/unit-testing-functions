@@ -14,3 +14,5 @@ it('should throw an error if integer entered is negative or zero', function() {
 it('should return the sum of the squares of all integers from 1 up to an including the number', function() {
 	expect(functions.sumSquares(4)).to.equal(30);
 });
+
+});
