@@ -440,12 +440,25 @@ function findMaxDiff(array) {
  * Inputs: A sentence, which is a string.   Example valid input: hello world.  Would return h-e-l-l-o w-o-r-l-d.
  *
  * Return value of the function; a string with dashes between all consecutive letters.  
+ * 
+ * How to implement the function: 1.  use charAt to check if you have a letter or a space.
+ *  2.  Loop through entire string until string.length.
+ *  3. If you have a letter, then append a dash, otherwise, dont.
  */
 
+function insertDashes(sentence) {
+	if(typeof(sentence) !== 'string') {
+		throw new Error('Invaid Input');
+	}
 
+	for (i = 0; i < sentence.length; i++) {
+		if (sentence.charAt[i] === ' ') {
+			//skip to next letter
+		}
+		sentence.charAt[i] + '-'
+	}
 
-
-
+}
 
 
 
