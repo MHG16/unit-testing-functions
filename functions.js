@@ -429,14 +429,6 @@ function findMaxDiff(array) {
 }
 
 
-
-
-
-
-
-
-
-
 /*
  * PROBLEM `insertDashes`: (normal)
  * Write a function called `insertDashes` that transforms a given sentence into
@@ -444,7 +436,19 @@ function findMaxDiff(array) {
  * For example: insertDashes('abba test') => a-b-b-a t-e-s-t
  *
  * If the input is invalid throw an 'Invalid Input' exception.
+ *
+ * Inputs: A sentence, which is a string.   Example valid input: hello world.  Would return h-e-l-l-o w-o-r-l-d.
+ *
+ * Return value of the function; a string with dashes between all consecutive letters.  
  */
+
+
+
+
+
+
+
+
 
 /*
  * PROBLEM `mySubstring`: (normal)
